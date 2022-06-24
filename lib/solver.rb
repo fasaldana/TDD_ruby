@@ -6,7 +6,19 @@ class Solver
     num * factorial(num - 1)
   end
 
-    def reverse_string(str)
-        str.reverse
+  def reverse_string(str)
+    str.reverse
+  end
+
+  def fizzbuzz(num)
+    if (num % 3).zero? && (num % 5).zero?
+      'fizzbuzz'
+    elsif (num % 5).zero?
+      'buzz'
+    elsif (num % 3).zero?
+      'fizz'
+    else
+      num.to_s
     end
+  end
 end

@@ -16,7 +16,11 @@ RSpec.describe Solver do
       expect(@solver.reverse_string('hello')).to eq('olleh')
     end
 
-    test: it 'should return the correct fizzbuzz answer' do 
-      expect(@solver.fizzbuzz(15)).to eq('fizzbuzz') expect(@solver.fizzbuzz(3)).to eq('fizz') expect(@solver.fizzbuzz(5)).to eq('buzz') expect(@solver.fizzbuzz(7)).to eq('7') end 
+    it 'should return the correct fizzbuzz answer' do
+      expect(@solver.fizzbuzz(15)).to eq('fizzbuzz')
+      expect(@solver.fizzbuzz(3)).to eq('fizz')
+      expect(@solver.fizzbuzz(5)).to eq('buzz')
+      expect(@solver.fizzbuzz(7)).to eq('7')
+    end
   end
 end
