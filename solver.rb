@@ -1,3 +1,0 @@
-class solver
-
-end
